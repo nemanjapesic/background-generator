@@ -4,19 +4,10 @@ html {
     height: 100%;
 }
 body {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
     margin: 0 auto;
     padding: 0;
     width: 100%;
@@ -47,8 +38,6 @@ body {
     background-color: rgba(0, 0, 0, .5);
     border-radius: 4px;
     opacity: 0;
-    -webkit-transition: all 500ms;
-    -o-transition: all 500ms;
     transition: all 500ms;
 }
 
@@ -64,10 +53,7 @@ h1 {
     color: #777;
     color: rgba(0, 0, 0, .5);
     text-transform: uppercase;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    user-select: none;
 }
 
 .colors {
@@ -83,8 +69,6 @@ input{
     padding: 2px;
     border: none;
     outline: none;
-    -webkit-transition: all 500ms;
-    -o-transition: all 500ms;
     transition: all 500ms;
 }
 
@@ -96,8 +80,8 @@ input[type=color]:hover{
 #slider {
     -webkit-appearance: none;
     -moz-appearance: none;
-         appearance: none;
-    margin: 20px;
+    appearance: none;
+    margin-top: 20px;
     min-width: 360px;
     height: 10px;
 }
@@ -116,7 +100,7 @@ input[type=color]:hover{
 #slider::-moz-range-thumb {
     -webkit-appearance: none;
     -moz-appearance: none;
-         appearance: none;
+    appearance: none;
     width: 10px;
     height: 25px;
     background: #ccc;
@@ -142,10 +126,7 @@ h2 {
     color: #777;
     color: rgba(0, 0, 0, .5);
     margin: 30px auto 10px auto;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    user-select: none;
 }
 
 textarea {
@@ -168,8 +149,6 @@ textarea {
     overflow: hidden;
     outline: none;
     border: none;
-    -webkit-transition: all 500ms;
-    -o-transition: all 500ms;
     transition: all 500ms;
 }
 textarea:hover {
@@ -190,8 +169,6 @@ textarea:hover {
     padding: 15px;
     outline: none;
     border: none;
-    -webkit-transition: all 500ms;
-    -o-transition: all 500ms;
     transition: all 500ms;
     cursor: pointer;
 }
