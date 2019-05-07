@@ -1,0 +1,30 @@
+{
+  "name": "background-generator",
+  "version": "1.0.0",
+  "description": "CSS Gradient Background Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nemanjapesic/background-generator.git"
+  },
+  "keywords": [
+    "css",
+    "background",
+    "generator"
+  ],
+  "author": "Nemanja Pesic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nemanjapesic/background-generator/issues"
+  },
+  "homepage": "https://github.com/nemanjapesic/background-generator#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-uglify-es": "^1.0.4"
+  }
+}
