@@ -4,7 +4,7 @@
   "description": "CSS Gradient Background Generator",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -20,11 +20,14 @@
   "bugs": {
     "url": "https://github.com/nemanjapesic/background-generator/issues"
   },
-  "homepage": "https://github.com/nemanjapesic/background-generator#readme",
+  "homepage": "https://nemanjapesic.github.io/background-generator",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-uglify-es": "^1.0.4"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
