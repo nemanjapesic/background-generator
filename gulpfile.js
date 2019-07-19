@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const babel = require('gulp-babel');
 const uglify = require('gulp-uglify-es').default;
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
@@ -12,12 +13,12 @@ gulp.task('copyHTML', async () => {
 // Autoprefix and Minify CSS
 gulp.task('css', async () => {
     gulp.src('src/css/*.css')
-    .pipe(autoprefixer({
-        browsers: ['last 2 versions'],
-        cascade: false
-    }))
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest('dist/css'));
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(cleanCSS({ compatibility: 'ie8' }))
+        .pipe(gulp.dest('dist/css'));
 })
 
 // Minify JS
@@ -26,6 +27,16 @@ gulp.task('scripts', async () => {
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
 });
+
+// Babel and Minify JS
+gulp.task('scripts', async () =>
+    gulp.src('src/js/main.js')
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(uglify())
+        .pipe(gulp.dest('dist/js'))
+);
 
 // Watch for changes
 gulp.task('watch', async () => {

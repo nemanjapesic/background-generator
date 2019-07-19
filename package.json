@@ -22,8 +22,11 @@
   },
   "homepage": "https://nemanjapesic.github.io/background-generator",
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
     "gulp-clean-css": "^4.2.0",
     "gulp-uglify-es": "^1.0.4"
   },
